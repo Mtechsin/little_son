@@ -5,7 +5,7 @@ bot = commands.Bot(command_prefix = '+')
 @bot.remove_command("help")
 @bot.event
 async def on_ready():
-    await bot.change_presence(status=discord.Status.online, activity=discord.game('Annoying you 😋'))
+    await bot.change_presence(status=discord.Status.online, activity=discord.Game('Annoying you 😋'))
     print("ready")
 @bot.command()
 async def help(ctx):
